@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class RootViewController: UIViewController {
+    private let moduleView = RootView()
+
+    override func loadView() {
+        view = moduleView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
+
 
